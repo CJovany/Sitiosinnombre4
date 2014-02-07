@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Sistema de control</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#pageAltas">Altas</a></li>
+            <li><a href="#pageBajas">Bajas</a></li>
+			<li><a href="#pageConsultas">Consultas</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Sistema de Control</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pageAltas">
+	<div data-role="header">
+		<h1>Altas</h1>
+        ID: <BR/><input type="number" id="txtid" placeHolder="ID"/>
+        <BR/>
+        Nombre: <BR/><input type="text" id="txtnombre" placeHolder="Nombre"/>
+        <BR/>
+        Ap. Paterno: <BR/><input type="text" id="txtPaterno" placeHolder="Apellido Paterno"/>
+        <BR/>
+        Ap. Materno: <BR/><input type="text" id="txtMaterno" placeHolder="Apellido Materno"/>
+        <br/>
+        <input type="submit" value ="Ingresar" id="btnIngresar"/>
+	</div>
+	<div data-role="content">	
+	</div>
+	<div data-role="footer">
+		<h4>Sistema de Control</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pageBajas">
+	<div data-role="header">
+		<h1>Bajas</h1>
+        ID:<br/>
+        <input type="number" id="txBajaID" placeHolder="ID"/>
+        <br/>
+        <input type="submit" id="btnBajaID" value="Eliminar"/>
+        <br/>
+	</div>
+	<div data-role="content">	
+    
+	</div>
+	<div data-role="footer">
+		<h4>Sistema de Control</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pageConsultas">
+	<div data-role="header">
+		<h1>Consultas</h1>
+        ID:<br/>
+        <input type="number" id="txConsultaID"/>
+        <br/>
+        <input type="submit" id="btnConsultaID" value="Buscar"/>
+        <br/><br/>
+        ID: <BR/><input type="number" id="txtid" readonly placeHolder="ID"/>
+        <BR/>
+        Nombre: <BR/><input type="text" id="txtnombre" readonly placeHolder="Nombre"/>
+        <BR/>
+        Ap. Paterno: <BR/><input type="text" id="txtPaterno" readonly placeHolder="Apellido Paterno"/>
+        <BR/>
+        Ap. Materno: <BR/><input type="text" id="txtMaterno" readonly placeHolder="Apellido Materno"/>
+	</div>
+	<div data-role="content">			
+	</div>
+	<div data-role="footer">
+		<h4>Sistema de Control</h4>
+	</div>
+</div>
+
+</body>
+</html>
